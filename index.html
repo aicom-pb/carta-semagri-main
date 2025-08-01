@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura de Pimenta Bueno - Carta de Serviços</title>
+    <meta name="description" content="Carta de Serviços da Prefeitura Municipal de Pimenta Bueno - RO. Informações sobre departamentos, competências e atendimento ao cidadão.">
+    <meta name="author" content="Prefeitura de Pimenta Bueno">
+    
+    <link rel="icon" type="image/png" href="assets/images/brasao.png">
+    
+    <meta property="og:title" content="Prefeitura de Pimenta Bueno - Carta de Serviços">
+    <meta property="og:description" content="Carta de Serviços da Prefeitura Municipal de Pimenta Bueno - RO">
+    <meta property="og:type" content="website">
+    
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-background-image"></div>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-title-section">
+                    <div class="header-icon-title">
+                        <div class="header-icon">
+                            <img src="assets/images/brasao.png" alt="Brasão da Prefeitura" style="width: 2.5rem; height: 2.5rem;">
+                        </div>
+                        <div>
+                            <h1>PREFEITURA DO MUNICÍPIO DE PIMENTA BUENO</h1>
+                            <p class="header-subtitle">CARTA DE SERVIÇO</p>
+                        </div>
+                    </div>
+                    
+                    <div class="main-cta">
+                        <p class="cta-text">Acesse nossas redes sociais e site da prefeitura:</p>
+                        <div class="cta-buttons">
+                            <a href="https://pimentabueno.ro.gov.br/site/" target="_blank" class="cta-button">
+                                <img src="assets/images/site.svg" alt="Ícone Site" class="cta-svg-icon">
+                                Site Oficial
+                            </a>
+                            <a href="https://www.facebook.com/PrefeituradePimentaBueno" target="_blank" class="cta-button">
+                                <img src="assets/images/facebook.svg" alt="Ícone Facebook" class="cta-svg-icon">
+                                Facebook
+                            </a>
+                            <a href="https://www.instagram.com/prefeiturapb/" target="_blank" class="cta-button">
+                                <img src="assets/images/instagram.svg" alt="Ícone Instagram" class="cta-svg-icon">
+                                Instagram
+                            </a>
+                            <a href="https://www.youtube.com/@PrefeituradePimentaBueno" target="_blank" class="cta-button">
+                                <img src="assets/images/youtube.svg" alt="Ícone YouTube" class="cta-svg-icon">
+                                YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <a href="https://www.google.com/maps/search/?api=1&query=SEU_ENDERECO_AQUI" target="_blank" class="map-link">
+                            <span>Av. Castelo Branco, 1046 - Pimenta Bueno–RO, 76970-000</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <a href="https://wa.me/5569981162254" target="_blank" class="whatsapp-link">
+                            <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
+                            <span>(69) 98116-2254</span>
+                        </a>
+                        <a href="https://wa.me/5569981699989" target="_blank" class="whatsapp-link">
+                            <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
+                            <span>(69) 98169-9989</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <a href="mailto:gabinete@pimentabueno.ro.gov.br" class="mail-link">
+                            <span>gabinete@pimentabueno.ro.gov.br</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section id="semagri-sede" class="department-section">
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-header-content">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tractor"><path d="M10 11.2V7.8c0-.8.7-1.5 1.5-1.5h.7c.8 0 1.5.7 1.5 1.5v3.4l2.6 2.6c.7.7 1.5 1.2 2.3 1.4L22 15.5"/><path d="M4 11V3"/><path d="M2 16h4"/><path d="M18 16h2"/><path d="M6 16c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-2c0-1.1-.9-2-2-2h-2z"/><path d="M14 16h.01"/><path d="M14 12V2.8c0-.4-.3-.8-.8-.8s-.8.3-.8.8V6"/><path d="M8 10V2.8c0-.4-.3-.8-.8-.8s-.8.3-.8.8V6"/><circle cx="12" cy="18" r="4"/></svg>
+                            </div>
+                            <div class="card-title-section">
+                                <h2 class="card-title">SEMAGRI: SEDE ADMINISTRATIVA</h2>
+                                <div class="card-director">
+                                    <i data-lucide="user"></i>
+                                    <span>Oziel Neto de Almeida</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="contact-info">
+                            <div class="contact-detail">
+                                <img src="assets/images/location.svg" alt="Ícone de Localização" class="contact-svg-icon">
+                                <a href="http://googleusercontent.com/maps.google.com/search?q=Avenida+Presidente+Dutra,+371,+Pioneiros,+Pimenta+Bueno,RO" target="_blank" class="map-link">
+                                    <span>Avenida Presidente Dutra, 371, Bairro: Pioneiros, Cep: 76970-000</span>
+                                </a>
+                            </div>
+                            <div class="contact-detail">
+                                <a href="https://wa.me/5569981699986" target="_blank" class="whatsapp-link">
+                                    <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
+                                    <span>(69) 9 8169 9986 (Setor Agropecuário)</span>
+                                </a>
+                            </div>
+                            <div class="contact-detail">
+                                <a href="https://wa.me/5569981699984" target="_blank" class="whatsapp-link">
+                                    <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
+                                    <span>(69) 98169 9984 (Setor Ambiental)</span>
+                                </a>
+                            </div>
+                            <div class="contact-detail">
+                                <img src="assets/images/email.svg" alt="Ícone de E-mail" class="contact-svg-icon">
+                                <a href="mailto:semagri.pb@hotmail.com" class="mail-link">
+                                    <span>semagri.pb@hotmail.com</span>
+                                </a> / 
+                                <a href="mailto:semagri@pimentabueno.ro.gov.br" class="mail-link">
+                                    <span>semagri@pimentabueno.ro.gov.br</span>
+                                </a>
+                            </div>
+                            <div class="contact-detail">
+                                <img src="assets/images/clock.svg" alt="Ícone de Horário" class="contact-svg-icon">
+                                <span>Segunda a sexta-feiras, das 07:30 às 13:30.</span>
+                            </div>
+                        </div>
+
+                        <div class="competencies">
+                            <h4>Atribuições do Secretário:</h4>
+                            <ul class="competencies-list">
+                                <li>A articulação e direcionamento das diretrizes e políticas definidas pelo Chefe do Poder Executivo municipal;</li>
+                                <li>A articulação e mediação do relacionamento político do poder executivo municipal com os membros do Poder Legislativo municipal;</li>
+                                <li>A articulação e mediação do relacionamento político do Poder Executivo municipal com os membros do Poder Executivo e Poder Legislativo estadual;</li>
+                                <li>A orientação da atuação política da liderança legislativa, representante do Poder Executivo na Câmara Municipal;</li>
+                                <li>A mediação do relacionamento entre auxiliares do Chefe do Poder Executivo municipal e destes junto ao Chefe do Poder Executivo municipal;</li>
+                                <li>A coordenação geral das ações políticas de governo;</li>
+                                <li>A prestação de assistência ao Chefe do Poder Executivo e a mediação de suas relações políticas com entidades públicas, privadas e público, no âmbito municipal;</li>
+                                <li>A coordenação do suporte financeiro, orçamentário e administrativo dos órgãos de assistência direta ao Prefeito e ao Vice-Prefeito;</li>
+                                <li>A assistência direta e imediata ao Prefeito na sua representação institucional e social, e o apoio protocolar nos atos públicos de que ele participar;</li>
+                            </ul>
+                            <h4>Atribuições da Secretaria:</h4>
+                            <ul class="competencies-list">
+                                <li>Possui a missão de promover as medidas para prevenir e corrigir as alterações do meio ambiente natural, urbano, rural e insular;</li>
+                                <li>Realizar estudos, pesquisas e avaliações de natureza econômica visando à previsão da produção agropecuária, destacando as atividades desenvolvidas em pequenas propriedades e a agricultura familiar.</li>
+                                <li>Cadastrar, registrar, licenciar, fiscalizar, e inspecionar os estabelecimentos públicos e privados, que produzem, manipulem, beneficiem, armazenem, transportem ou comercializem produtos de origem animal e seus derivados no âmbito do município.</li>
+                                <li>Apoiar e orientar a comercialização, divulgando os produtos da Unidade Familiar de Processamento Agroindustrial Pimenta Bueno – UFPA.</li>
+                                <li>Expedir a permissão de uso e o Alvará de funcionamento do exercício de atividade de feirante.</li>
+                                <li>Auxiliar o produtor rural na manutenção de estradas internas, construção de tanques, preparo de área para o plantio, dentre outras medidas de apoio relacionadas às ações do programa porteira adentro, entre outras atividades correlatas.</li>
+                                <li>Elaborar e propor diretrizes para desenvolvimento de política agrícola para o Município conforme suas características de produção, visando crescimento econômico e social;</li>
+                                <li>Acompanhar os dados da produção econômica do Município a fim de planejar ações específicas para dinamizar setores de produção mediante parcerias, convênios e ações articuladas com órgãos públicos e privados afins, determinando prioridades para o fomento da agropecuária local;</li>
+                                <li>Cuidar para compatibilizar atividades agropecuárias e agroindustriais com a legislação de posturas municipais e vigilância de saúde pública;</li>
+                                <li>Gerenciar o uso e a ampliação de equipamento de patrulha mecanizada para disponibilização ao produtor;</li>
+                                <li>Elaborar e propor programas de apoio ao pequeno produtor e pecuarista no sentido de oferecer-lhe suporte gerencial, de práticas e técnicas agrícolas e de manejo de rebanhos, além de produção agropecuária, buscando parceria com órgãos, entidades públicas e privadas afins;</li>
+                                <li>Cuidar dos procedimentos administrativos para manter convênios com órgãos públicos de apoio a agricultura e buscar outros convênios e parcerias de interesse para o setor;</li>
+                                <li>Desenvolver, em conjunto com outras secretarias, programas para apoio e de geração de renda para as famílias dos pequenos produtores e pecuaristas visando estimular a permanência do morador em área rural com ações que visem a melhoria de sua qualidade de vida;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="central-agropecuaria" class="department-section">
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-header-content">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-grain"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M12 5V21"/><path d="M3 12L7.5 10"/><path d="M16.5 10L21 12"/><path d="M12 14c-4.42 0-8 2-8 5s3.58 5 8 5 8-2 8-5-3.58-5-8-5Z"/></svg>
+                            </div>
+                            <div class="card-title-section">
+                                <h2 class="card-title">CENTRAL AGROPECUÁRIA</h2>
+                                <div class="card-director">
+                                    <i data-lucide="user"></i>
+                                    <span>Lorena Caroline Bastos Cornachini</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="competencies">
+                            <h4>Competências:</h4>
+                            <ul class="competencies-list">
+                                <li>Contribuir no estabelecimento e difusão de fluxos de procedimentos, processos e boas práticas da Pasta;</li>
+                                <li>Colaborar na organização de seminários, encontros, simpósios e outras atividades em prol do desenvolvimento do agronegócio;</li>
+                                <li>Estabelecer e monitorar junto às instituições governamentais, jurisdicionadas, entidades privadas, agências financeiras, fundações e congêneres, possíveis parcerias e projetos relacionados agropecuária;</li>
+                                <li>Promover, em cooperação com órgãos dos governos estadual e federal, atividades de incentivos à diversificação das atividades agropecuária;</li>
+                                <li>Incentivar a implementação de agroindústrias, de cooperativas de produtores, e associações, promovendo juntamente com as entidades estaduais e federais, e órgãos representativos das classes produtoras, estudos de viabilidade técnica, e econômico-financeira, bem como oferecendo incentivos;</li>
+                                <li>Analisar os projetos apresentados pelos interessados em receber os incentivos ofertados pelo município, bem como verificar a viabilidade e legalidade dos projetos;</li>
+                                <li>Produzir sementes e mudas destinadas a programas de diversificação das atividades agrícolas, hortas e pomares comunitários;</li>
+                                <li>Supervisionar e coordenar as ações relacionadas ao desenvolvimento e à execução da pesquisa científica e tecnológica para a área agropecuária;</li>
+                                <li>Realizar estudos, pesquisas e avaliações de natureza econômica visando à previsão da produção agropecuária, destacando as atividades desenvolvidas em pequenas propriedades e a agricultura familiar;</li>
+                                <li>Articular ações voltadas à garantia do abastecimento de alimentos e o provimento de insumos básicos para a agricultura e a pecuária do município;</li>
+                                <li>Aplicar as políticas e a fiscalização da ordem normativa de defesa sanitária animal e vegetal no território do município;</li>
+                                <li>Acompanhar os assuntos de interesse do município, relativos às atividades de agricultura e pecuária;</li>
+                                <li>Definir as políticas e a coordenação da implementação nas atividades de assistência técnica, extensão rural e outros serviços ligados ao desenvolvimento e ao aprimoramento da agricultura e pecuária do município, destinados à agricultura familiar, assentados, pescadores, aquicultores e outros, bem como o fomento e o incentivo ao associativismo e à organização de cooperativas nesses segmentos;</li>
+                                <li>Promover programas voltados para a fixação do homem no campo, levantamentos sobre a situação dos trabalhadores rurais e o desenvolvimento de programas de geração de emprego no meio rural;</li>
+                                <li>Planejar, coordenar e acompanhar projetos de assentamentos rurais, promovendo a melhoria das condições ambientais e espaciais e incentivando a utilização de métodos e tecnologias adaptadas, respeitando o meio ambiente e avaliando os resultados;</li>
+                                <li>Articular com outros órgãos e entidades para que as diretrizes, ações, os objetivos e metas do governo federal e estadual, sejam fortalecidos na soma de esforços e promoção e fomento de assentamentos rurais, projetos de colonização e de comunidades rurais;</li>
+                                <li>Promover a inspeção animal e vegetal que terá por objetivo a fiscalização prévia, do ponto de vista industrial e sanitária, dos produtos de origem animal e vegetal, sendo que a fiscalização dos produtos de origem animal será exercida sob a responsabilidade de um profissional com formação superior em medicina veterinária, podendo ser coadjuvado por agente de fiscalização, designado para esse fim específico;</li>
+                                <li>Assistir ao secretário na formulação e na realização de seminários, estudos, pesquisas e diagnósticos relacionados às atividades pesqueira e de agropecuária, bem como dirigir as equipes técnicas encarregadas de realizar os trabalhos de secretaria relacionados como setor pesqueiro, da agricultura e pecuária;</li>
+                                <li>Levantar subsídios e elaborar pareceres sobre as questões relacionadas com o desenvolvimento pesqueiro e de agropecuária do município, bem como manter-se informado sobre a legislação pertinente às instituições e ao mercado comercial, além de difundi-la entre os interessados;</li>
+                                <li>Dar pareceres sobre projetos de investimentos pesqueiros e de agronegócios, à luz da política de desenvolvimento econômico local, bem como levantar as informações estatísticas básicas para a elaboração de políticas públicas de desenvolvimento de pesca, da agricultura e da pecuária;</li>
+                                <li>Examinar projetos de localização de novos empreendimentos de pesca e de agropecuária, aplicando a legislação e os critérios estabelecidos pela política municipal;</li>
+                                <li>Promover a aplicação de programas de desenvolvimento rural, mediante acesso à terra, por instituição de cooperativas e associações, e fomento à produção agropecuária, bem como providenciar ações que possibilitem a capacitação de pessoal para o setor agropecuário;</li>
+                                <li>Coordenar programas de assistência técnica e difundir a tecnologia apropriada às atividades agropecuárias;</li>
+                                <li>Programar e coordenar a realização de estudos e a execução de medidas, visando o desenvolvimento das atividades agropecuárias do município e sua integração à economia local e regional, bem como promover a realização de programas de extensão rural, em integração com outras atividades que atuem no setor agrícola;</li>
+                                <li>Executar outras atividades correlatas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="divisao-inspecao-sim" class="department-section">
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-header-content">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-inspection"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M10 12h4"/><path d="M10 16h4"/><path d="M10 8h4"/></svg>
+                            </div>
+                            <div class="card-title-section">
+                                <h2 class="card-title">DIVISÃO DE SERVIÇO DE INSPEÇÃO SIM</h2>
+                                <div class="card-director">
+                                    <i data-lucide="user"></i>
+                                    <span>Eligiane Lucas de Oliveira</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="competencies">
+                            <h4>Competências:</h4>
+                            <ul class="competencies-list">
+                                <li>Controlar, inspecionar e fiscalizar os produtos e subprodutos de origem animal;</li>
+                                <li>Fiscalizar o transporte, armazenamento, comércio e beneficiamento de produtos, subprodutos e derivados de origem animal;</li>
+                                <li>Cadastrar, registrar, licenciar, fiscalizar, e inspecionar os estabelecimentos públicos e privados, que produzem, manipulem, beneficiem, armazenem, transportem ou comercializem produtos de origem animal e seus derivados no âmbito do município;</li>
+                                <li>Aplicar sanções aos infratores das normas;</li>
+                                <li>Interditar, por descumprimento de medida sanitária, estabelecimentos públicos ou particulares e proibir o trânsito de produtos e subprodutos de origem animal no âmbito deste município, em desacordo com a legislação vigente;</li>
+                                <li>Executar outras atividades correlatas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="divisao-cadastro-produtor" class="department-section">
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-header-content">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+                            </div>
+                            <div class="card-title-section">
+                                <h2 class="card-title">DIVISÃO DE CADASTRO E APOIO AO PRODUTOR RURAL</h2>
+                                <div class="card-director">
+                                    <i data-lucide="user"></i>
+                                    <span>Olga Ignes Ribeiro Correia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="competencies">
+                            <h4>Competências:</h4>
+                            <ul class="competencies-list">
+                                <li>Coordenar e administrar o Programa estabelecido pela Lei Municipal n.º 2.155/2015, por meio da sua Coordenação-Geral;</li>
+                                <li>Celebrar convênios e contratos com outras instituições governamentais e/ou não-governamentais, no âmbito do Programa e na forma da legislação em vigor;</li>
+                                <li>Apoiar e orientar a comercialização, divulgando os produtos das Unidades Familiar de Processamento Agroindustrial Pimenta Bueno - UFPA;</li>
+                                <li>Constituir um banco de dados de produtos e mercado agrícola;</li>
+                                <li>Providenciar em suas instalações área para a comercialização dos produtos do Programa de Verticalização da Pequena Produção Agropecuária do Município de Pimenta Bueno–RO - PROVPPA;</li>
+                                <li>Providenciar espaços em exposições, feiras e eventos, visando à comercialização dos produtos do PROVPPA;</li>
+                                <li>Executar outras atividades correlatas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="divisao-fiscalizacao-feiras" class="department-section">
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-header-content">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-pen-line"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9.5 8.5v3.3L11 13l1.5-1.5 3.3-1.42"/><path d="M22 17H2"/></svg>
+                            </div>
+                            <div class="card-title-section">
+                                <h2 class="card-title">DIVISÃO DE FISCALIZAÇÃO E CONTROLE DAS FEIRAS</h2>
+                                <div class="card-director">
+                                    <i data-lucide="user"></i>
+                                    <span>Sandra Cristina da Silva</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="competencies">
+                            <h4>Competências:</h4>
+                            <ul class="competencies-list">
+                                <li>Realizar o cadastro dos feirantes observando as normas desta Lei;</li>
+                                <li>Expedir a permissão de uso e o Alvará de funcionamento do exercício de atividade de feirante;</li>
+                                <li>Proceder ao levantamento periódico dos feirantes inadimplentes, para adoção das medidas tendentes à revogação da autorização de uso, com o consequente cancelamento do cadastro;</li>
+                                <li>Promover o preenchimento de vagas existentes nas feiras, mediante regular seleção dos interessados;</li>
+                                <li>Designar o local e o espaço a ser ocupado pelos feirantes, respeitadas as normas operacionais e a legislação pertinente;</li>
+                                <li>Manter atualizado o cadastro das feiras livres, dos feirantes e das respectivas bancas, por grupo de comércio;</li>
+                                <li>Manter visível a marcação correspondente ao local de montagem das bancas utilizadas pelos feirantes, fiscalizando o seu fiel cumprimento;</li>
+                                <li>Executar outras atividades correlatas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="central-porteira-adentro" class="department-section">
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-header-content">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gate"><path d="M22 16h-4V4H2v12h3"/><path d="M2 20h20"/><path d="M15 4v12"/><path d="M8 4v12"/><path d="M5 20h3"/><path d="M14 20h3"/></svg>
+                            </div>
+                            <div class="card-title-section">
+                                <h2 class="card-title">CENTRAL DO PROGRAMA PORTEIRA ADENTRO</h2>
+                                <div class="card-director">
+                                    <i data-lucide="user"></i>
+                                    <span>Valdir Pereira Cotrim</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="competencies">
+                            <h4>Competências:</h4>
+                            <ul class="competencies-list">
+                                <li>Difundir a prática da mecanização agrícola;</li>
+                                <li>Supervisionar, coordenar e orientar o produtor rural no uso das máquinas e operações com os veículos que atuam no Programa Porteira Adentro;</li>
+                                <li>Emitir e realizar a cobrança pela utilização dos maquinários;</li>
+                                <li>Coordenar e supervisionar a patrulha mecanizada integrantes do programa porteira adentro;</li>
+                                <li>Auxiliar o produtor rural na manutenção de estradas internas, construção de tanques, preparo de área para o plantio, dentre outras medidas de apoio relacionadas às ações do programa porteira adentro;</li>
+                                <li>Emitir relatórios das atividades desenvolvidas pelo programa porteira adentro;</li>
+                                <li>Exercer o controle operacional e manutenção da frota de veículos, máquinas e implementos;</li>
+                                <li>Elaborar e emitir relatório quadrimestral informando os agricultores e produtores rurais contemplados com o respectivo programa, disponibilizando inclusive valores;</li>
+                                <li>Executar outras atividades correlatas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-title">
+                        <div class="footer-icon">
+                            <img src="assets/images/brasao.png" alt="Brasão da Prefeitura" style="width: 2rem; height: 2rem;">
+                        </div>
+                        <div>
+                            <h3>Prefeitura de Pimenta Bueno</h3>
+                            <p>Serviços Municipais</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-contact">
+                        <i data-lucide="map-pin"></i>
+                        <a href="https://www.google.com/maps/search/?api=1&query=SEU_ENDERECO_AQUI" target="_blank" class="map-link">
+                            <span>Av. Castelo Branco, 1046 - Pimenta Bueno–RO</span>
+                        </a>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <a href="https://wa.me/5569981162254" target="_blank" class="whatsapp-link">
+                            <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
+                            <span>(69) 98116-2254</span>
+                        </a>
+                        <a href="https://wa.me/5569981699989" target="_blank" class="whatsapp-link">
+                            <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
+                            <span>(69) 98169-9989</span>
+                        </a>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <i data-lucide="mail"></i>
+                        <a href="mailto:gabinete@pimentabueno.ro.gov.br" class="mail-link">
+                            <span>gabinete@pimentabueno.ro.gov.br</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Prefeitura Municipal de Pimenta Bueno - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
